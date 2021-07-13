@@ -7,6 +7,7 @@ tags:
   - document
 ---
 ## Project Story
+
 ### Go Wandering: Saving cost with Redis cache
 
 Redis is known as a distributed cache tool that is usually used to improve data access performance. But, it is interesting to see that the Go Wandering team also found another benefit of using it to save operational costs. How?
@@ -15,14 +16,16 @@ There are two areas:
 
 1. API Calls
 
-  Just like any other modern SaaS (Software as a Service) today, the Go Wandering system integrates with many external services to do various things. 
+  Just like any other modern SaaS (Software as a Service) today, the Go Wandering system integrates with many external services to do various things. For example, it needs an external service to get information about the weather condition, or to get information about nearby facilities around certain places.
+
+  These external services have their own access policies and pricing plan. 
 
 2. Database size
 
   In general, running Redis is much cheaper than scaling up the main database.
 
-
 ## From the Labs
+
 ### Jamstack architecture
 
 ## Community Links
